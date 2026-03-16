@@ -21,5 +21,4 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
-      - GEMINI_API_KEY=${GEMINI_API_KEY}
     command: npm run dev
