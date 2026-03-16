@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brutal-black: #121212;
+  --color-brutal-grey: #2a2a2a;
+  --color-brutal-yellow: #f59e0b;
+  --color-brutal-red: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply bg-brutal-black text-white font-mono overflow-hidden;
+    background-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-xl saturate-150;
+}
+
+.brutal-border {
+  @apply border-3 border-brutal-grey shadow-[8px_8px_0px_rgba(0,0,0,0.3)];
+}
+
+.brutal-border-active {
+  @apply border-brutal-yellow shadow-[10px_10px_0px_rgba(0,0,0,0.5)] -translate-x-0.5 -translate-y-0.5;
+}
+
+/* Custom scrollbar for terminal feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black/20;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brutal-grey border-2 border-transparent bg-clip-content;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brutal-yellow;
+}
