@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Cpu, HardDrive, Clock, Monitor } from 'lucide-react';
 import { Process } from '../types';
 
-export const Shell: React.FC<{ 
-  currentWorkspace: number; 
+export const Shell: React.FC<{
+  currentWorkspace: number;
   layoutMode: 'TILING' | 'FLOATING';
   onToggleLayout: () => void;
 }> = ({ currentWorkspace, layoutMode, onToggleLayout }) => {
@@ -23,7 +23,7 @@ export const Shell: React.FC<{
   return (
     <div className="h-8 bg-brutal-black border-b-2 border-brutal-grey flex justify-between items-center px-4 text-[11px] font-mono tracking-widest uppercase">
       <div className="flex items-center gap-6">
-        <button 
+        <button
           onClick={onToggleLayout}
           className="flex items-center gap-2 text-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-black px-2 py-0.5 transition-colors border border-brutal-yellow"
         >
@@ -67,9 +67,9 @@ interface TaskbarProps {
   onRestoreProcess: (id: string) => void;
 }
 
-export const Taskbar: React.FC<TaskbarProps> = ({ 
-  onOpenApp, 
-  currentWorkspace, 
+export const Taskbar: React.FC<TaskbarProps> = ({
+  onOpenApp,
+  currentWorkspace,
   onSwitchWorkspace,
   processes,
   onRestoreProcess
@@ -80,8 +80,8 @@ export const Taskbar: React.FC<TaskbarProps> = ({
     <div className="h-10 bg-black/80 backdrop-blur-md border-t-2 border-brutal-grey flex items-center px-4 gap-4">
       <div className="flex gap-1">
         {[1, 2, 3, 4].map(n => (
-          <button 
-            key={n} 
+          <button
+            key={n}
             onClick={() => onSwitchWorkspace(n)}
             className={`w-6 h-6 flex items-center justify-center border border-white/20 text-[10px] transition-colors ${n === currentWorkspace ? 'bg-brutal-yellow text-brutal-black border-brutal-yellow' : 'hover:bg-white/10'}`}
           >
@@ -96,20 +96,20 @@ export const Taskbar: React.FC<TaskbarProps> = ({
         <button onClick={() => onOpenApp('CONTACT')} className="text-[10px] hover:text-brutal-yellow transition-colors uppercase tracking-tighter">Contact</button>
         <button onClick={() => onOpenApp('DRYAD')} className="text-[10px] hover:text-brutal-yellow transition-colors uppercase tracking-tighter">Dryad</button>
         <button onClick={() => onOpenApp('DEVSCAFE')} className="text-[10px] hover:text-brutal-yellow transition-colors uppercase tracking-tighter">Dev's Café</button>
-        <button onClick={() => onOpenApp('SETTINGS')} className="text-[10px] hover:text-brutal-yellow transition-colors uppercase tracking-tighter">Settings</button>
+        <button onClick={() => onOpenApp('STATS')} className="text-[10px] hover:text-brutal-yellow transition-colors uppercase tracking-tighter">Stats</button>
       </div>
-      
+
       <div className="flex-1"></div>
-      <input 
-        type="text" 
-        placeholder="Search..." 
-        value={search} 
+      <input
+        type="text"
+        placeholder="Search..."
+        value={search}
         onChange={(e) => setSearch(e.target.value)}
         className="bg-black/50 border border-white/20 text-[10px] px-2 py-1 text-white placeholder:text-white/30 outline-none"
       />
-      
+
       <div className="h-4 w-[1px] bg-white/10 mx-2"></div>
-      
+
       <div className="flex gap-2 overflow-x-auto max-w-[20%]">
         {processes.map(p => (
           <button

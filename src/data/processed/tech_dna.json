@@ -1,0 +1,115 @@
+{
+  "technologies": [
+    {
+      "name": "Go",
+      "status": "STABLE",
+      "first_seen": "2016-11-30T01:59:42Z",
+      "last_seen": "2026-03-20T14:01:52Z",
+      "repo_count": 34,
+      "total_commits": 111,
+      "velocity_trend": "down",
+      "profile": "Maintainer",
+      "importance_score": 0.8
+    },
+    {
+      "name": "PHP",
+      "status": "ACTIVE",
+      "first_seen": "2020-12-25T05:14:31Z",
+      "last_seen": "2026-03-19T22:46:21Z",
+      "repo_count": 8,
+      "total_commits": 15,
+      "velocity_trend": "up",
+      "profile": "Maintainer",
+      "importance_score": 0.5
+    },
+    {
+      "name": "Rust",
+      "status": "ACTIVE",
+      "first_seen": "2020-10-05T12:51:26Z",
+      "last_seen": "2026-03-20T15:52:40Z",
+      "repo_count": 6,
+      "total_commits": 14,
+      "velocity_trend": "up",
+      "profile": "Maintainer",
+      "importance_score": 0.8
+    },
+    {
+      "name": "Python",
+      "status": "ACTIVE",
+      "first_seen": "2022-02-04T05:33:14Z",
+      "last_seen": "2026-03-20T10:28:04Z",
+      "repo_count": 7,
+      "total_commits": 10,
+      "velocity_trend": "up",
+      "profile": "Maintainer",
+      "importance_score": 0.9
+    },
+    {
+      "name": "Ruby",
+      "status": "LEGACY",
+      "first_seen": "2014-01-15T20:21:51Z",
+      "last_seen": "2021-01-22T19:50:40Z",
+      "repo_count": 3,
+      "total_commits": 10,
+      "velocity_trend": "down",
+      "profile": "Maintainer",
+      "importance_score": 0.7
+    },
+    {
+      "name": "JavaScript",
+      "status": "LEGACY",
+      "first_seen": "2020-11-21T21:40:24Z",
+      "last_seen": "2022-06-07T12:30:41Z",
+      "repo_count": 40,
+      "total_commits": 3,
+      "velocity_trend": "down",
+      "profile": "Maintainer",
+      "importance_score": 1
+    },
+    {
+      "name": "Java",
+      "status": "LEGACY",
+      "first_seen": "2020-11-21T21:40:24Z",
+      "last_seen": "2022-06-07T12:30:41Z",
+      "repo_count": 4,
+      "total_commits": 3,
+      "velocity_trend": "down",
+      "profile": "Maintainer",
+      "importance_score": 0.7
+    },
+    {
+      "name": "C++",
+      "status": "LEGACY",
+      "first_seen": "2020-11-13T04:57:35Z",
+      "last_seen": "2021-04-07T20:49:15Z",
+      "repo_count": 2,
+      "total_commits": 3,
+      "velocity_trend": "down",
+      "profile": "Maintainer",
+      "importance_score": 0.7
+    },
+    {
+      "name": "TypeScript",
+      "status": "ACTIVE",
+      "first_seen": "2025-12-22T20:53:00Z",
+      "last_seen": "2026-03-20T10:26:44Z",
+      "repo_count": 19,
+      "total_commits": 2,
+      "velocity_trend": "up",
+      "profile": "Maintainer",
+      "importance_score": 1
+    },
+    {
+      "name": "C#",
+      "status": "LEGACY",
+      "first_seen": "2021-01-25T10:14:02Z",
+      "last_seen": "2021-01-25T10:14:02Z",
+      "repo_count": 17,
+      "total_commits": 1,
+      "velocity_trend": "down",
+      "profile": "Maintainer",
+      "importance_score": 0.6
+    }
+  ],
+  "analysis_timestamp": "2026-03-20T23:32:53.253Z"
+}
