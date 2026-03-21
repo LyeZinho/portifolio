@@ -145,7 +145,7 @@ export const Projects: React.FC = () => {
       desc: 'Real-time encrypted chat with E2E encryption',
       tech: 'TypeScript, WebSockets, Crypto',
       features: ['E2E Encryption', 'Real-time', '21 commits'],
-      link: 'https://github.com/LyeZinho/VOX-chat',
+      link: 'https://github.com/LyeZinho/vox',
     },
     {
       name: 'ScrapEngine',
